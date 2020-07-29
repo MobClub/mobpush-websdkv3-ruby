@@ -62,7 +62,7 @@ MobPushConfig.appkey = "appkey"
 MobPushConfig.appSecret = "appSecret"
 MobPushConfig.baseUrl = "http://api.push.mob.com"
 pushClient = PushV3Client.new()
-pushResult = pushClient.getPushByRids("", "title", "content", "rids")
+pushResult = pushClient.pushByRids("", "title", "content", "rids")
 ```
 
 统计查询示例片段代码:
