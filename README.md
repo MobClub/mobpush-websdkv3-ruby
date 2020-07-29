@@ -36,10 +36,10 @@
 
 
 # 使用方式
-Gemfile:
-```
-gem 'mobpush'
-```
+* ## Gem
+    [MobPush](https://rubygems.org/gems/mobpush)
+* ## 依赖
+    ruby >= 2.2
 
  
 # 使用注意事项
