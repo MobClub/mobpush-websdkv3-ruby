@@ -60,7 +60,6 @@ require 'mobpush'
 
 MobPushConfig.appkey = "appkey"
 MobPushConfig.appSecret = "appSecret"
-MobPushConfig.baseUrl = "http://api.push.mob.com"
 pushClient = PushV3Client.new()
 pushResult = pushClient.pushByRids("", "title", "content", "rids")
 ```
@@ -72,7 +71,6 @@ require 'mobpush'
 
 MobPushConfig.appkey = "appkey"
 MobPushConfig.appSecret = "appSecret"
-MobPushConfig.baseUrl = "http://api.push.mob.com"
 statClient = StatsV3Client.new()
 statResult = statClient.getStatsByWorkId("workId")
 
