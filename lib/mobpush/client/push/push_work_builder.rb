@@ -8,7 +8,7 @@ class PushWorkBuilder
         @push = OpenStruct.new(workno: workno, source: 'webapi')
         @push.pushTarget = OpenStruct.new(tagsType: 1)
         @push.pushNotify = OpenStruct.new(title: title, content: content, taskCron: 0,
-            plats: [1, 2], iosProduction: 1, offlineSeconds: 3600, type: 1)
+            plats: [1, 2], iosProduction: 1, offlineSeconds: 3600, type: 1, speed: 1)
         @push.pushOperator = OpenStruct.new()
     end
 

@@ -11,9 +11,10 @@ class PushV3Client
     @CANCEL_TASK_URI = "/push/drop"
     @REPLACE_TASK_URI = "/push/replace"
     @RECALL_TASK_URI = "/push/recall"
+    @PUSH_MULTI = "/v3/push/createMulti"
 
     class << self
-        attr_accessor :PUSH_URI, :GET_BY_WORKID_URI, :GET_BY_WORKNO_URI, :CANCEL_TASK_URI, :REPLACE_TASK_URI, :RECALL_TASK_URI
+        attr_accessor :PUSH_URI, :GET_BY_WORKID_URI, :GET_BY_WORKNO_URI, :CANCEL_TASK_URI, :REPLACE_TASK_URI, :RECALL_TASK_URI, :PUSH_MULTI
     end
 
 
@@ -71,5 +72,9 @@ class PushV3Client
     def getPushByWorkno(workno)
         params = {:workno => workno}
         MobHTTP.post(MobPushConfig.baseUrl + PushV3Client.GET_BY_WORKNO_URI, nil, params)
+    end
+
+    def pushMulti(pushMulti)
+        MobHTTP.post(MobPushConfig.baseUrl + PushV3Client.PUSH_MULTI, nil, pushMulti)
     end
 end

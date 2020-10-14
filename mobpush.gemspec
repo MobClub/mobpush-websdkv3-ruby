@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
     spec.name = 'mobpush'
-    spec.version = '1.0.1'
+    spec.version = '2.0.0'
     spec.summary = 'mobpush for ruby'
     spec.author = 'mobtech'
     spec.required_ruby_version = '>= 2.2'
